@@ -21,7 +21,16 @@ public class Movimento : MonoBehaviour
 
     }
 
-    
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Respawn"))
+        {
+            transform.position = new Vector2(34.13f, 2.6074f);
+
+        }
+    }
+
+
 
 
 
